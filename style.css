@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f9fafb, #f3f4f6);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    padding: 3rem 1rem;
+}
+
+.container {
+    max-width: 64rem;
+    margin: 0 auto;
+    align-items: center;
+
+}
+
+h1 {
+    text-align: center;
+    color: #1f2937;
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.teams-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .teams-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.team-card {
+    background: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.team-header {
+    background: #4f46e5;
+    color: white;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.team-header h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.participants-list {
+    padding: 1.5rem;
+    list-style: none;
+}
+
+.participant {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.participant:last-child {
+    margin-bottom: 0;
+}
+
+.participant-avatar {
+    width: 2rem;
+    height: 2rem;
+    background: #e0e7ff;
+    color: #4f46e5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    margin-right: 0.75rem;
+}
+
+.participant-name {
+    color: #374151;
+}
+
+
+footer {
+    background-color: gray;
+    color: white;
+    padding: 2rem 1rem;
+    text-align:center;
+    margin-top: 4rem;
+}
+
+.footer-main {
+    font-size: 1.125rem;
+}
+
+.footer-copyright {
+    margin-top: 0.5rem;
+    color: #a7f3d0;
+}
